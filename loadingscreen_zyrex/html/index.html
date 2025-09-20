@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiveM Loading Screen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video id="bg-video" class="bg-video" autoplay loop muted>
+        <source src="video/intro.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <button id="show-info-btn" style="display:none;position:fixed;top:32px;right:32px;z-index:3;padding:16px 30px;font-size:18px;background:#3c7aff;color:#fff;border:none;border-radius:8px;box-shadow:0 2px 8px #0005;cursor:pointer;">Show Information</button>
+    <div class="container" id="main-ui">
+        <div class="sidebar hideable">
+            <h2>AT Members</h2>
+            <div class="member">
+                <img src="img/edz1nk.png" alt="Edz1nk">
+                <div>
+                    <strong>Owner</strong><br>
+                    Owner + DEV
+                </div>
+            </div>
+            <div class="member">
+                <img src="img/daxmen.png" alt="Daxmen">
+                <div>
+                    <strong>Owner</strong><br>
+                    Co-owner + DEV
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="logo-container hideable">
+                <img src="img/logo.png" alt="Server Logo" class="logo">
+            </div>
+        </div>
+    </div>
+
+    <div class="controls-info controls-list right-top hideable">
+
+        <div><b>Decrease volume</b> = <span class="emoji">⬇️</span></div>
+        <div><b>Increase volume</b> = <span class="emoji">⬆️</span></div>
+        <div><b>Hide info</b> = <span class="emoji">➡️</span></div>
+        <div><b>Stop music</b> = <span class="emoji">P</span></div>
+    </div>
+    <div id="music-status" class="hideable"></div>
+
+    <!-- All remaining elements for slideshow and devlog have been removed. HTML is simplified and optimized. -->
+
+    <audio id="bg-music" src="audio/music.mp3" loop autoplay></audio>
+    <script src="script.js"></script>
+</body>
+</html>
