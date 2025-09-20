@@ -58,5 +58,5 @@ All files for modification can be found in the `html` folder.
 ---
 
 ## Preview
+<img width="1920" height="1001" alt="sdsds" src="https://github.com/user-attachments/assets/09799cba-8a25-4dbe-b3bf-4b282913deb1" />
 
-![Uploading sdsds.png…]()
